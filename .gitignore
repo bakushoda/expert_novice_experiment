@@ -26,3 +26,7 @@ build/
 
 # ログファイル
 *.log
+
+# 実験データ
+pilot_experiment_data/
+pilot_experiment_data_arrangement.py
