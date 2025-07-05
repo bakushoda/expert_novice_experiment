@@ -16,12 +16,12 @@ TASKS = [
         'image_path': 'images/VALO_champ_low.png',
         'questions': [
             {
-                'display_text': '画面に映っていた味方キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'VALO_味方キャラクター数_低刺激',
                 'type': 'text'
             },
             {
-                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた敵エージェントの数を教えてください。',
                 'spreadsheet_text': 'VALO_敵キャラクター数_低刺激',
                 'type': 'text'
             }
@@ -31,12 +31,12 @@ TASKS = [
         'image_path': 'images/VALO_champ_high.png',
         'questions': [
             {
-                'display_text': '画面に映っていた味方キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'VALO_味方キャラクター数_高刺激',
                 'type': 'text'
             },
             {
-                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた敵エージェントの数を教えてください。',
                 'spreadsheet_text': 'VALO_敵キャラクター数_高刺激',
                 'type': 'text'
             }
@@ -46,12 +46,12 @@ TASKS = [
         'image_path': 'images/VALO_champ_low2.png',
         'questions': [
             {
-                'display_text': '画面に映っていた味方キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'VALO_味方キャラクター数_遠近_低刺激',
                 'type': 'text'
             },
             {
-                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた敵エージェントの数を教えてください。',
                 'spreadsheet_text': 'VALO_敵キャラクター数_遠近_低刺激',
                 'type': 'text'
             }
@@ -61,12 +61,12 @@ TASKS = [
         'image_path': 'images/VALO_champ_high2.png',
         'questions': [
             {
-                'display_text': '画面に映っていた味方キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'VALO_味方キャラクター数_遠近_高刺激',
                 'type': 'text'
             },
             {
-                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた敵エージェントの数を教えてください。',
                 'spreadsheet_text': 'VALO_敵キャラクター数_遠近_高刺激',
                 'type': 'text'
             }
@@ -91,7 +91,7 @@ TASKS = [
                 'display_text': 'スキル・エフェクトの色で覚えているものは？（複数選択可）',
                 'spreadsheet_text': 'VALO_スキル色_低刺激',
                 'type': 'multiple_choice',
-                'choices': ['赤系', '青系', '黄色系', '緑系', '紫系', '白/光', '覚えていない']
+                'choices': ['赤系（ピンク・オレンジを含む）', '青系（水色・紫を含む）', '緑系（黄緑を含む）', 'その他']
             },
             {
                 'display_text': 'スキル・エフェクトの位置で覚えているものは？（複数選択可）',
@@ -120,7 +120,7 @@ TASKS = [
                 'display_text': 'スキル・エフェクトの色で覚えているものは？（複数選択可）',
                 'spreadsheet_text': 'VALO_スキル色_高刺激',
                 'type': 'multiple_choice',
-                'choices': ['赤系', '青系', '黄色系', '緑系', '紫系', '白/光', '覚えていない']
+                'choices': ['赤系（ピンク・オレンジを含む）', '青系（水色・紫を含む）', '緑系（黄緑を含む）', 'その他']
             },
             {
                 'display_text': 'スキル・エフェクトの位置で覚えているものは？（複数選択可）',
@@ -134,7 +134,7 @@ TASKS = [
         'image_path': 'images/VALO_minimap_low.png',
         'questions': [
             {
-                'display_text': 'ミニマップに映っていたキャラクターアイコンの数を教えてください。',
+                'display_text': 'ミニマップに映っていたエージェントの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'VALO_ミニマップキャラクター数_低刺激',
                 'type': 'text'
             }
@@ -144,7 +144,7 @@ TASKS = [
         'image_path': 'images/VALO_minimap_high.png',
         'questions': [
             {
-                'display_text': 'ミニマップに映っていたキャラクターアイコンの数を教えてください。',
+                'display_text': 'ミニマップに映っていたエージェントの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'VALO_ミニマップキャラクター数_高刺激',
                 'type': 'text'
             }
@@ -154,12 +154,12 @@ TASKS = [
         'image_path': 'images/LOL_champ_low.jpg',
         'questions': [
             {
-                'display_text': '画面に映っていた味方キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた味方チャンピオンの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'LOL_味方キャラクター数_低刺激',
                 'type': 'text'
             },
             {
-                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた敵チャンピオンの数を教えてください。',
                 'spreadsheet_text': 'LOL_敵キャラクター数_低刺激',
                 'type': 'text'
             }
@@ -169,12 +169,12 @@ TASKS = [
         'image_path': 'images/LOL_champ_high.jpg',
         'questions': [
             {
-                'display_text': '画面に映っていた味方キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた味方チャンピオンの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'LOL_味方キャラクター数_高刺激',
                 'type': 'text'
             },
             {
-                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'display_text': '画面に映っていた敵チャンピオンの数を教えてください。',
                 'spreadsheet_text': 'LOL_敵キャラクター数_高刺激',
                 'type': 'text'
             }
@@ -199,7 +199,7 @@ TASKS = [
                 'display_text': 'スキル・エフェクトの色で覚えているものは？（複数選択可）',
                 'spreadsheet_text': 'LOL_スキル色_低刺激',
                 'type': 'multiple_choice',
-                'choices': ['赤系', '青系', '黄色系', '緑系', '紫系', '白/光', '覚えていない']
+                'choices': ['赤系（ピンク・オレンジを含む）', '青系（水色・紫を含む）', '緑系（黄緑を含む）', 'その他']
             },
             {
                 'display_text': 'スキル・エフェクトの位置で覚えているものは？（複数選択可）',
@@ -228,7 +228,7 @@ TASKS = [
                 'display_text': 'スキル・エフェクトの色で覚えているものは？（複数選択可）',
                 'spreadsheet_text': 'LOL_スキル色_高刺激',
                 'type': 'multiple_choice',
-                'choices': ['赤系', '青系', '黄色系', '緑系', '紫系', '白/光', '覚えていない']
+                'choices': ['赤系（ピンク・オレンジを含む）', '青系（水色・紫を含む）', '緑系（黄緑を含む）', 'その他']
             },
             {
                 'display_text': 'スキル・エフェクトの位置で覚えているものは？（複数選択可）',
@@ -242,7 +242,7 @@ TASKS = [
         'image_path': 'images/LOL_health_low.jpg',
         'questions': [
             {
-                'display_text': '緑色のHPバーのキャラクターのヘルスは何％ぐらいでしたか？',
+                'display_text': '緑色のHPバーのチャンピオンのヘルスは何％ぐらいでしたか？',
                 'spreadsheet_text': 'LOL_HP_低刺激',
                 'type': 'choice',
                 'choices': ['0-20%', '21-40%', '41-60%', '61-80%', '81-100%', '覚えていない']
@@ -253,7 +253,7 @@ TASKS = [
         'image_path': 'images/LOL_health_high.jpg',
         'questions': [
             {
-                'display_text': '緑色のHPバーのキャラクターのヘルスは何％ぐらいでしたか？',
+                'display_text': '緑色のHPバーのチャンピオンのヘルスは何％ぐらいでしたか？',
                 'spreadsheet_text': 'LOL_HP_高刺激',
                 'type': 'choice',
                 'choices': ['0-20%', '21-40%', '41-60%', '61-80%', '81-100%', '覚えていない']
@@ -264,7 +264,7 @@ TASKS = [
         'image_path': 'images/LOL_minimap_low.jpg',
         'questions': [
             {
-                'display_text': 'ミニマップに映っていたキャラクターアイコンの数を教えてください。',
+                'display_text': 'ミニマップに映っていたチャンピオンの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'LOL_ミニマップキャラクター数_低刺激',
                 'type': 'text'
             }
@@ -274,7 +274,7 @@ TASKS = [
         'image_path': 'images/LOL_minimap_high.jpg',
         'questions': [
             {
-                'display_text': 'ミニマップに映っていたキャラクターアイコンの数を教えてください。',
+                'display_text': 'ミニマップに映っていたチャンピオンの数を教えてください。（自分を含めて）',
                 'spreadsheet_text': 'LOL_ミニマップキャラクター数_高刺激',
                 'type': 'text'
             }
