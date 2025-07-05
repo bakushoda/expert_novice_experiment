@@ -585,8 +585,7 @@ def get_game_from_image_path(image_path):
 def show_game_transition(win, display, current_game, next_game):
     """ゲーム切り替え画面を表示"""
     if next_game and next_game in GAME_INFO:
-
-ここからは{GAME_INFO[next_game]['display_name']}に関する問題になります。
+        transition_text = f'''ここからは{GAME_INFO[next_game]['display_name']}に関する問題になります。
 
 準備ができたらスペースキーを押してください。'''
         
