@@ -43,7 +43,7 @@ except ImportError:
 
 # 設定ファイルの読み込み
 try:
-    from task_config import TASKS, TIMING_CONFIG, EXPERIMENT_INFO
+    from task_config import TASKS, TIMING_CONFIG, EXPERIMENT_INFO, GAME_INFO
 except ImportError:
     print("Error: task_config.py not found.")
     sys.exit(1)
@@ -529,6 +529,7 @@ class DataManager:
             print(f"ローカル保存でエラーが発生しました: {e}")
             return False, None
 
+
 def get_participant_info():
     """参加者名を取得（英数字版）"""
     # まずは英数字での入力を試行
@@ -568,6 +569,46 @@ def create_trial_list(config):
         trials.append(trial)
     
     return trials
+
+
+def get_game_from_image_path(image_path):
+    """画像パスからゲーム名を取得"""
+    if 'VALO_' in image_path:
+        return 'VALO'
+    elif 'LOL_' in image_path:
+        return 'LOL'
+    elif 'FN_' in image_path:
+        return 'FN'
+    return None
+
+
+def show_game_transition(win, display, current_game, next_game):
+    """ゲーム切り替え画面を表示"""
+    if next_game and next_game in GAME_INFO:
+        transition_text = f'''ここからは{GAME_INFO[next_game]['display_name']}に関する問題になります。
+
+準備ができたらスペースキーを押してください。'''
+        
+        transition_msg = display.create_text_stim(
+            text=transition_text, 
+            height=0.08,
+            color='lightblue'
+        )
+        
+        # より安全なキー待機処理
+        waiting = True
+        while waiting:
+            transition_msg.draw()
+            win.flip()
+            
+            keys = event.getKeys()
+            for key in keys:
+                if key == 'escape':
+                    safe_quit(win)
+                elif key == 'space':
+                    waiting = False
+                    break
+            core.wait(0.01)
 
 
 def run_trial(win, trial, config, display, question_interface):
@@ -702,9 +743,21 @@ def run_experiment():
     # 結果記録用リスト
     results = []
     
+    # ゲーム切り替え管理用変数
+    current_game = None
+    
     # 各試行を実行
     for i, trial in enumerate(trials):
-        # 進捗表示
+        # 現在の試行のゲームを取得
+        next_game = get_game_from_image_path(trial['task_data']['image_path'])
+        
+        # ゲームが変わったかチェック
+        if current_game != next_game and next_game is not None:
+            # ゲーム切り替え画面を表示
+            show_game_transition(win, display, current_game, next_game)
+            current_game = next_game
+        
+        # 進捗表示（最初の試行以外）
         if i > 0:
             progress_text = f'''タスク {i+1}/{len(trials)}
 
