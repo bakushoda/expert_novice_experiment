@@ -11,6 +11,22 @@ TIMING_CONFIG = {
     'blackout_duration': 1.5   # ブラックアウト時間（秒）
 }
 
+GAME_INFO = {
+    'VALO': {
+        'name': 'VALORANT',
+        'display_name': 'VALORANT'
+    },
+    'LOL': {
+        'name': 'League of Legends', 
+        'display_name': 'League of Legends'
+    },
+    'FN': {
+        'name': 'Fortnite',
+        'display_name': 'Fortnite'
+    }
+}
+
+
 TASKS = [
     {
         'image_path': 'images/VALO_champ_low.png',
