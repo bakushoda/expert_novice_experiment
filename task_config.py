@@ -335,5 +335,45 @@ TASKS = [
                 'type': 'text'
             }
         ]
+    },
+    {
+        'image_path': 'images/FN_champ_no_scope_low.png',
+        'questions': [
+            {
+                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'spreadsheet_text': 'FN_敵キャラクター数_スコープなし_低刺激',
+                'type': 'text'
+            }
+        ]
+    },
+    {
+        'image_path': 'images/FN_champ_no_scope_high.png',
+        'questions': [
+            {
+                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'spreadsheet_text': 'FN_敵キャラクター数_スコープなし_高刺激',
+                'type': 'text'
+            }
+        ]
+    },
+    {
+        'image_path': 'images/FN_champ_scope_low.png',
+        'questions': [
+            {
+                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'spreadsheet_text': 'FN_敵キャラクター数_スコープ_低刺激',
+                'type': 'text'
+            }
+        ]
+    },
+    {
+        'image_path': 'images/FN_champ_scope_high.png',
+        'questions': [
+            {
+                'display_text': '画面に映っていた敵キャラクターの数を教えてください。',
+                'spreadsheet_text': 'FN_敵キャラクター数_スコープ_高刺激',
+                'type': 'text'
+            }
+        ]
     }
 ]
