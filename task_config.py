@@ -355,7 +355,7 @@ TASKS = [
                 'type': 'text'
             }
         ]
-    }
+    },
     {
         'image_path': 'images/FN_champ_scope_low.png',
         'questions': [
@@ -375,5 +375,5 @@ TASKS = [
                 'type': 'text'
             }
         ]
-    },
+    }
 ]
