@@ -892,7 +892,7 @@ def run_experiment():
         print(f"\n実際の刺激提示時間: 平均 {avg_duration:.4f}秒 (目標: {config.stimulus_duration}秒)")
     
     win.close()
-    core.quit()
+    # core.quit()
 
 
 if __name__ == '__main__':

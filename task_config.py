@@ -32,7 +32,7 @@ TASKS = [
         'image_path': 'images/VALO_champ_low.png',
         'questions': [
             {
-                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分を含めて）',
+                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分・壁越しの味方を含む。倒されたエージェントは含まない。）',
                 'spreadsheet_text': 'VALO_味方キャラクター数_低刺激',
                 'type': 'text'
             },
@@ -47,7 +47,7 @@ TASKS = [
         'image_path': 'images/VALO_champ_high.png',
         'questions': [
             {
-                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分を含めて）',
+                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分・壁越しの味方を含む。倒されたエージェントは含まない。）',
                 'spreadsheet_text': 'VALO_味方キャラクター数_高刺激',
                 'type': 'text'
             },
@@ -62,7 +62,7 @@ TASKS = [
         'image_path': 'images/VALO_champ_low2.png',
         'questions': [
             {
-                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分を含めて）',
+                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分・壁越しの味方を含む。倒されたエージェントは含まない。）',
                 'spreadsheet_text': 'VALO_味方キャラクター数_遠近_低刺激',
                 'type': 'text'
             },
@@ -77,7 +77,7 @@ TASKS = [
         'image_path': 'images/VALO_champ_high2.png',
         'questions': [
             {
-                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分を含めて）',
+                'display_text': '画面に映っていた味方エージェントの数を教えてください。（自分・壁越しの味方を含む。倒されたエージェントは含まない。）',
                 'spreadsheet_text': 'VALO_味方キャラクター数_遠近_高刺激',
                 'type': 'text'
             },

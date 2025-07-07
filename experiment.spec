@@ -51,7 +51,14 @@ a = Analysis(
         'datetime',
         'os',
         'sys',
-        'random'
+        'random',
+        # 必要なモジュールを追加
+        'unittest',
+        'unittest.mock',
+        'scipy.spatial.transform._rotation_groups',
+        'scipy.special.cython_special',
+        'psychopy.visual.backends._pyglet',
+        'psychopy.hardware',
     ] + psychopy_hidden + pyglet_hidden,
     hookspath=[],
     hooksconfig={},
@@ -59,7 +66,7 @@ a = Analysis(
     excludes=[
         'tkinter',
         'test',
-        'unittest', 
+        # 'unittest',  # この行を削除またはコメントアウト
         'distutils',
         'setuptools',
         'matplotlib.backends._backend_tk'
